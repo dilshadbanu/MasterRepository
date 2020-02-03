@@ -1,0 +1,22 @@
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String args[]) {
+        // I have created an array list, imported java.util.ArrayList
+        ArrayList<String> list = new ArrayList<String>();
+        //Let's add few alphabets to the list created
+        list.add("A");
+        list.add("B");
+        list.add("C");
+        list.add("D");
+        list.add("E");
+        //Print Elements that we added to list
+        System.out.println(list);
+        //Remove elements from the list
+        list.remove("A");   //remove by Value
+        list.remove(2);  //remove by index
+        //List after removing elements
+        System.out.println(list);
+
+    }
+}
