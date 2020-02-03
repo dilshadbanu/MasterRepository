@@ -1,0 +1,25 @@
+import java.util.HashMap;
+import java.util.Map;
+
+import java.util.*;
+
+public class MapClass {
+    public static void main(String[] args) {
+        // Initialise a Map of type HashMap
+        Map<Integer, String> map = new HashMap<>();
+        //Let's add few numbers and respective String to the map created
+        map.put(1, "One");
+        map.put(3, "Three");
+        map.put(5, "Five");
+        map.put(7, "Seven");
+        map.put(9, "Nine");
+        //Print Elements that we added to Map
+        System.out.println(map);
+        map.remove(3);//Remove by value
+        System.out.println(map);
+        // If it doesn't exists, returns
+        map.remove(2);//2 Doesn't exists, previous set is retained
+        System.out.println(map);
+    }
+}
+
