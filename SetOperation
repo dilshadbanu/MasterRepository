@@ -1,0 +1,23 @@
+import java.util.HashMap;
+import java.util.HashSet;
+import java.util.Map;
+import java.util.Set;
+
+public class SetClass {
+    public static void main(String[] args) {
+        // new set by using HashSet
+        Set<String> set = new HashSet<String>();
+        //Let's add few String to the set created
+        set.add("1");
+        set.add("2");
+        set.add("3");
+        set.add("4");
+        //Print Elements that we added to Set
+        System.out.println(set);
+        set.remove("1");//Remove by value
+        System.out.println(set);
+        // If it doesn't exists, returns
+        set.remove("2");//2 Exists, it is removed from set
+        System.out.println(set);
+    }
+}
